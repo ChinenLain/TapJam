@@ -16,6 +16,14 @@ namespace GameLogic
             GameModule.UI.ShowUIAsync<UIStartWindow>();
         }
 
+        public void DestroyRoom()
+        {
 
+        }
+
+        public override void Update()
+        {
+            
+        }
     }
 }

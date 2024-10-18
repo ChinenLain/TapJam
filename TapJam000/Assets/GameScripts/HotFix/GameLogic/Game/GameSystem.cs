@@ -1,21 +1,30 @@
+using Cysharp.Threading.Tasks;
+using GameBase;
 using System.Collections;
 using System.Collections.Generic;
+using TEngine;
 using UnityEngine;
 
 namespace GameLogic
 {
-    public class GameSystem : MonoBehaviour
+    [Update]
+    public class GameSystem : BehaviourSingleton<GameSystem>
     {
-        // Start is called before the first frame update
-        void Start()
+        public async UniTaskVoid LoadGame()
         {
-        
+            await UniTask.Yield();
+
+            GameModule.UI.ShowUIAsync<UIGameWindow>();
         }
 
-        // Update is called once per frame
-        void Update()
+        public void DestroyGame()
         {
-        
+
+        }
+
+        public override void Update()
+        {
+
         }
     }
 }
