@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UIRaw_UIAnim_anim-blood_blood-X-01_bloodX-03
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 0
+      maxTextureSize: 0
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 49
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: WebGL
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 21300000, guid: affc66d4491f5b649a0f06147943a03c, type: 3}
+    - {fileID: 21300000, guid: b683088b6f4d5354385c9adf6b893520, type: 3}
+    - {fileID: 21300000, guid: 69fee246791f76e428e1be261f631f14, type: 3}
+    - {fileID: 21300000, guid: bb02d2ac1fa5dc146851bed6fd40fa41, type: 3}
+    - {fileID: 21300000, guid: e773ceda8d3c8e146a7245075c0f9e62, type: 3}
+    - {fileID: 21300000, guid: 93633273aa64a834aa2f84f24480d6be, type: 3}
+    - {fileID: 21300000, guid: 4de0c69883c1bdb4cb80e61445b53b5a, type: 3}
+    - {fileID: 21300000, guid: 070aaf2717f9b434cb2ea22ff33efab2, type: 3}
+    - {fileID: 21300000, guid: 5e5c40eebe556e84e876757633ade52b, type: 3}
+    - {fileID: 21300000, guid: 03c174721c5335c4c83374d24e05cd50, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 03c174721c5335c4c83374d24e05cd50: 21300000
+    - 93633273aa64a834aa2f84f24480d6be: 21300000
+    - affc66d4491f5b649a0f06147943a03c: 21300000
+    - 69fee246791f76e428e1be261f631f14: 21300000
+    - 070aaf2717f9b434cb2ea22ff33efab2: 21300000
+    - 4de0c69883c1bdb4cb80e61445b53b5a: 21300000
+    - e773ceda8d3c8e146a7245075c0f9e62: 21300000
+    - b683088b6f4d5354385c9adf6b893520: 21300000
+    - bb02d2ac1fa5dc146851bed6fd40fa41: 21300000
+    - 5e5c40eebe556e84e876757633ade52b: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 03c174721c5335c4c83374d24e05cd50, type: 3}
+  - {fileID: 21300000, guid: 93633273aa64a834aa2f84f24480d6be, type: 3}
+  - {fileID: 21300000, guid: affc66d4491f5b649a0f06147943a03c, type: 3}
+  - {fileID: 21300000, guid: 69fee246791f76e428e1be261f631f14, type: 3}
+  - {fileID: 21300000, guid: 070aaf2717f9b434cb2ea22ff33efab2, type: 3}
+  - {fileID: 21300000, guid: 4de0c69883c1bdb4cb80e61445b53b5a, type: 3}
+  - {fileID: 21300000, guid: e773ceda8d3c8e146a7245075c0f9e62, type: 3}
+  - {fileID: 21300000, guid: b683088b6f4d5354385c9adf6b893520, type: 3}
+  - {fileID: 21300000, guid: bb02d2ac1fa5dc146851bed6fd40fa41, type: 3}
+  - {fileID: 21300000, guid: 5e5c40eebe556e84e876757633ade52b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - bloodX-c-10
+  - bloodX-c-06
+  - bloodX-c-01
+  - bloodX-c-03
+  - bloodX-c-08
+  - bloodX-c-07
+  - bloodX-c-05
+  - bloodX-c-02
+  - bloodX-c-04
+  - bloodX-c-09
+  m_RenderDataMap: {}
+  m_Tag: UIRaw_UIAnim_anim-blood_blood-X-01_bloodX-03
+  m_IsVariant: 0

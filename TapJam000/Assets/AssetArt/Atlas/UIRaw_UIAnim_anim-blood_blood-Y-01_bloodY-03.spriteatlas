@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UIRaw_UIAnim_anim-blood_blood-Y-01_bloodY-03
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 0
+      maxTextureSize: 0
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 49
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: WebGL
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 21300000, guid: 71d021c121346994daa951c8316c94a7, type: 3}
+    - {fileID: 21300000, guid: 9d818b7bf13b489489cb43b5e4f63a19, type: 3}
+    - {fileID: 21300000, guid: b3cb3959ece82dd48b55828312ac9bee, type: 3}
+    - {fileID: 21300000, guid: 4d326664d7bb8654399665ff0f362577, type: 3}
+    - {fileID: 21300000, guid: 0b564b875c4589f49b23278d479e1a86, type: 3}
+    - {fileID: 21300000, guid: 29966540e8a1a734e99b563aa8a5d14c, type: 3}
+    - {fileID: 21300000, guid: b7686468f263ecb4a9b47bd170c1e7a2, type: 3}
+    - {fileID: 21300000, guid: 7242049e6fe60f149a2fca10d97dbb47, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 29966540e8a1a734e99b563aa8a5d14c: 21300000
+    - 71d021c121346994daa951c8316c94a7: 21300000
+    - 4d326664d7bb8654399665ff0f362577: 21300000
+    - 0b564b875c4589f49b23278d479e1a86: 21300000
+    - b7686468f263ecb4a9b47bd170c1e7a2: 21300000
+    - b3cb3959ece82dd48b55828312ac9bee: 21300000
+    - 9d818b7bf13b489489cb43b5e4f63a19: 21300000
+    - 7242049e6fe60f149a2fca10d97dbb47: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 29966540e8a1a734e99b563aa8a5d14c, type: 3}
+  - {fileID: 21300000, guid: 71d021c121346994daa951c8316c94a7, type: 3}
+  - {fileID: 21300000, guid: 4d326664d7bb8654399665ff0f362577, type: 3}
+  - {fileID: 21300000, guid: 0b564b875c4589f49b23278d479e1a86, type: 3}
+  - {fileID: 21300000, guid: b7686468f263ecb4a9b47bd170c1e7a2, type: 3}
+  - {fileID: 21300000, guid: b3cb3959ece82dd48b55828312ac9bee, type: 3}
+  - {fileID: 21300000, guid: 9d818b7bf13b489489cb43b5e4f63a19, type: 3}
+  - {fileID: 21300000, guid: 7242049e6fe60f149a2fca10d97dbb47, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - bloodY-03-06
+  - bloodY-03-01
+  - bloodY-03-04
+  - bloodY-03-05
+  - bloodY-03-07
+  - bloodY-03-03
+  - bloodY-03-02
+  - bloodY-03-08
+  m_RenderDataMap: {}
+  m_Tag: UIRaw_UIAnim_anim-blood_blood-Y-01_bloodY-03
+  m_IsVariant: 0
