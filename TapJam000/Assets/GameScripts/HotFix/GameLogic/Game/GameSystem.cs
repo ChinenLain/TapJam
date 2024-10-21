@@ -10,11 +10,13 @@ namespace GameLogic
     [Update]
     public class GameSystem : BehaviourSingleton<GameSystem>
     {
+
         public async UniTaskVoid LoadGame()
         {
             await UniTask.Yield();
 
             GameModule.UI.ShowUIAsync<UIGameWindow>();
+
         }
 
         public void DestroyGame()

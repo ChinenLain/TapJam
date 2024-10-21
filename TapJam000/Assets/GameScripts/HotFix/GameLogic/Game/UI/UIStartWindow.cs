@@ -66,6 +66,8 @@ namespace GameLogic
         {
             m_goUISettingPanel.SetActive(false);
             m_goUILoadingPanel.SetActive(false);
+            m_sliderMusic.value = HomeSystem.Instance.SettingData.MusicVolume;
+            m_sliderSound.value = HomeSystem.Instance.SettingData.SoundVolume;
         }
 
         #region ÊÂ¼þ
@@ -96,6 +98,7 @@ namespace GameLogic
         private void OnSliderMusicChange(float value)
         {
             GameModule.Audio.MusicVolume = value;
+            HomeSystem.Instance.SettingData.MusicVolume = value;
         }
 
         private async UniTaskVoid OnClickMusicminBtn()
@@ -111,7 +114,8 @@ namespace GameLogic
 
         private void OnSliderSoundChange(float value)
         {
-            GameModule.Audio.SoundVolume = value;
+            GameModule.Audio.Volume = value;
+            HomeSystem.Instance.SettingData.SoundVolume = value;
         }
 
         private async UniTaskVoid OnClickSoundminBtn()
@@ -129,6 +133,7 @@ namespace GameLogic
             await UniTask.Yield();
             m_btnSetting.gameObject.SetActive(true);
             m_goUISettingPanel.SetActive(false);
+            GameModule.Setting.SetObject("setting", HomeSystem.Instance.SettingData);
         }
         #endregion
 

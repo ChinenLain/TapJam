@@ -59,9 +59,9 @@ namespace GameLogic
             joystickParent = GetComponent<RectTransform>();
         }
 
-        public void update()
+        private void FixedUpdate()
         {
-            
+            GameEvent.Send(UIEventDefine.StickDrag, inputVector);
         }
     }
 }
