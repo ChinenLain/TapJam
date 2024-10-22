@@ -4,6 +4,7 @@ using Cysharp.Threading.Tasks;
 using GameBase;
 using GameLogic;
 using TEngine;
+using UnityEngine;
 
 /// <summary>
 /// 游戏App。
@@ -39,6 +40,11 @@ public partial class GameApp:Singleton<GameApp>
     /// </summary>
     private void StartGameLogic()
     {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            AppPermission.RequestPermissions();
+        }
+
         StartHome().Forget();
     }
 

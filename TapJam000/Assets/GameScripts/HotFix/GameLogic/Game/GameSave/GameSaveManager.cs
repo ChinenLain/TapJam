@@ -30,8 +30,9 @@ namespace GameLogic
         {
             get
             {
-                if (! GameModule.Setting.HasSetting("setting"))
-                    GameModule.Setting.SetObject("setting", new SettingData());
+                if (!GameModule.Setting.HasSetting("setting"))
+                { GameModule.Setting.SetObject("setting", new SettingData());
+                }
                 return GameModule.Setting.GetObject<SettingData>("setting").ShallowCopy();
             }
 

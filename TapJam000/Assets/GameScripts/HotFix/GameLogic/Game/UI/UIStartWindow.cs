@@ -133,7 +133,8 @@ namespace GameLogic
             await UniTask.Yield();
             m_btnSetting.gameObject.SetActive(true);
             m_goUISettingPanel.SetActive(false);
-            GameModule.Setting.SetObject("setting", HomeSystem.Instance.SettingData);
+            GameSaveManager.Instance.settingData = HomeSystem.Instance.SettingData;
+            GameModule.Setting.Save();
         }
         #endregion
 
