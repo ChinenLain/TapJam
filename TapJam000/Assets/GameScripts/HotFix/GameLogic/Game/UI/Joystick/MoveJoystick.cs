@@ -34,14 +34,14 @@ namespace GameLogic
             joystickHandle.anchoredPosition = new Vector2(inputVector.x * (joystickParent.sizeDelta.x / 2),
                                                           inputVector.y * (joystickParent.sizeDelta.y / 2));
 
-            GameEvent.Send(UIEventDefine.StickDrag);
+            GameEvent.Send(UIEventDefine.StickDrag, inputVector);
         }
 
         public void OnEndDrag(PointerEventData eventData)
         {
             joystickHandle.anchoredPosition = Vector2.zero;
             inputVector = Vector2.zero;
-            GameEvent.Send(UIEventDefine.StickEndDrag);
+            GameEvent.Send(UIEventDefine.StickEndDrag, inputVector);
         }
 
         public void OnPointerDown(PointerEventData eventData)
@@ -61,7 +61,7 @@ namespace GameLogic
 
         private void FixedUpdate()
         {
-            GameEvent.Send(UIEventDefine.StickDrag, inputVector);
+
         }
     }
 }

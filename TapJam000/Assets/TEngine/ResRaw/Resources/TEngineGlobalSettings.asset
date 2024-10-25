@@ -50,6 +50,8 @@ MonoBehaviour:
       componentName: Text
     - uiElementRegex: m_richText
       componentName: RichTextItem
+    - uiElementRegex: m_tmptext
+      componentName: TextMeshProUGUI
     - uiElementRegex: m_btn
       componentName: Button
     - uiElementRegex: m_img
@@ -79,7 +81,6 @@ MonoBehaviour:
     - uiElementRegex: m_canvasGroup
       componentName: CanvasGroup
   m_HybridCLRCustomGlobalSettings:
-    m_Enable: 1
     HotUpdateAssemblies:
     - GameBase.dll
     - GameProto.dll

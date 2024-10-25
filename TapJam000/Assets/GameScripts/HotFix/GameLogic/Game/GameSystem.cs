@@ -16,7 +16,7 @@ namespace GameLogic
             await UniTask.Yield();
 
             GameModule.UI.ShowUIAsync<UIGameWindow>();
-
+            MapManager.Instance.ChangeChapter(1);
         }
 
         public void DestroyGame()

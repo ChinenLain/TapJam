@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 3519487485
+    locked: 0
+  - name: mapface
+    uniqueID: 1306346053
+    locked: 0
+  - name: scene
+    uniqueID: 4128667727
+    locked: 0
+  - name: rain
+    uniqueID: 1187406921
+    locked: 0

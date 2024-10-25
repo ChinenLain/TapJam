@@ -40,16 +40,16 @@ namespace GameLogic
         {
             switch(dir)
             {
-                case 0:
+                case (int)Direction.DirectionType.Left:
                     m_imgAttackBtn.sprite = attack_l;
                     break;
-                case 1:
+                case (int)Direction.DirectionType.Down:
                     m_imgAttackBtn.sprite = attack_b;
                     break;
-                case 2:
+                case (int)Direction.DirectionType.Right:
                     m_imgAttackBtn.sprite = attack_r;
                     break;
-                case 3:
+                case (int)Direction.DirectionType.Up:
                     m_imgAttackBtn.sprite = attack_t;
                     break;
             }

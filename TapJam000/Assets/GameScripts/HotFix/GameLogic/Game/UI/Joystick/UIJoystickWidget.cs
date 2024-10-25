@@ -10,17 +10,21 @@ namespace GameLogic
     class UIJoystickWidget : UIWidget
     {
         private MoveJoystick moveJoystick;
-
+        private int joystickType;
         Sprite imgHandle;
         Sprite imgHandleDrag;
+        Sprite imgHandle_2;
+        Sprite imgHandleDrag_2;
 
         #region 脚本工具生成的代码
         private Image m_imgBackground;
         private Image m_imgHandle;
+        private Image m_imgJoystick2;
         protected override void ScriptGenerator()
         {
             m_imgBackground = FindChildComponent<Image>("m_imgBackground");
             m_imgHandle = FindChildComponent<Image>("m_imgBackground/m_imgHandle");
+            m_imgJoystick2 = FindChildComponent<Image>("m_imgJoystick2");
         }
         #endregion
 
@@ -30,17 +34,17 @@ namespace GameLogic
 
         protected override void RegisterEvent()
         {
-            AddUIEvent(UIEventDefine.StickDrag, onStickDrag);
-            AddUIEvent(UIEventDefine.StickEndDrag, onStickEndDrag);
+            AddUIEvent<Vector2>(UIEventDefine.StickDrag, onStickDrag);
+            AddUIEvent<Vector2>(UIEventDefine.StickEndDrag, onStickEndDrag);
         }
 
 
-        private void onStickDrag()
+        private void onStickDrag(Vector2 input)
         {
             m_imgHandle.sprite = imgHandleDrag;
         }
 
-        private void onStickEndDrag()
+        private void onStickEndDrag(Vector2 input)
         {
            m_imgHandle.sprite = imgHandle;
         }
@@ -49,11 +53,34 @@ namespace GameLogic
         {
             imgHandle = GameModule.Resource.LoadAsset<Sprite>("move-2-01");
             imgHandleDrag = GameModule.Resource.LoadAsset<Sprite>("move-2-02");
-            AddComponent();
+            imgHandle_2 = GameModule.Resource.LoadAsset<Sprite>("move-1-01");
+            imgHandleDrag_2 = GameModule.Resource.LoadAsset<Sprite>("move-1-02");
+            joystickType = GameSaveManager.Instance.settingData.joystickType;
+            if (joystickType == (int)JoystickType.Fixed) 
+            {
+                m_imgBackground.gameObject.SetActive(true);
+                m_imgJoystick2.gameObject.SetActive(false);
+            }
+            else
+            {
+                m_imgBackground.gameObject.SetActive(false);
+                m_imgJoystick2.gameObject.SetActive(false);
+            }
+                AddComponent();
         }
 
         protected override void OnRefresh()
         {
+            if (joystickType == (int)JoystickType.Fixed)
+            {
+                m_imgBackground.gameObject.SetActive(true);
+                m_imgJoystick2.gameObject.SetActive(false);
+            }
+            else
+            {
+                m_imgBackground.gameObject.SetActive(false);
+                m_imgJoystick2.gameObject.SetActive(false);
+            }
             AddComponent();
         }
 

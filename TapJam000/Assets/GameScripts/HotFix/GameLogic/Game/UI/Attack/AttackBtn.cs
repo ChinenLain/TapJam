@@ -21,13 +21,9 @@ namespace GameLogic
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            Vector2 position;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                m_RectAttackParent, eventData.position, eventData.pressEventCamera, out position);
-            position = GetClosestDirection(position);
-            if (position.x == -1) dir = 0;
-            else if (position.x == 1) dir = 2;
-            else dir = (position.y == -1) ? 1 : 3;
+                m_RectAttackParent, eventData.position, eventData.pressEventCamera, out Vector2 position);
+            dir = Direction.GetClosestDirectionType(position);
             HoldTime = 0f;
             isHolding = true;
             GameEvent.Send(UIEventDefine.AttackClick, dir, HoldTime);
@@ -49,7 +45,7 @@ namespace GameLogic
         {
             isHolding = false;
             HoldTime = 0f;
-            dir = 0;
+            dir = (int)Direction.DirectionType.Mid;
         }
 
         
@@ -59,32 +55,6 @@ namespace GameLogic
             {
                 HoldTime += Time.deltaTime;
             }
-        }
-
-        Vector2 GetClosestDirection(Vector2 direction)
-        {
-            Vector2[] directions = new Vector2[]
-            {
-            new Vector2(0, 1),   // Up
-            new Vector2(1, 0),   // Right
-            new Vector2(0, -1),  // Down
-            new Vector2(-1, 0)   // Left
-            };
-
-            Vector2 closestDirection = directions[0];
-            float minAngle = Vector2.Angle(direction, closestDirection);
-
-            for (int i = 1; i < directions.Length; i++)
-            {
-                float angle = Vector2.Angle(direction, directions[i]);
-                if (angle < minAngle)
-                {
-                    minAngle = angle;
-                    closestDirection = directions[i];
-                }
-            }
-
-            return closestDirection;
         }
     }
 }
