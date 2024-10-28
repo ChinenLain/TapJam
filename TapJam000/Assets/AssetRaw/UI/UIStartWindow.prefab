@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6611983471308172723
 RectTransform:
   m_ObjectHideFlags: 0
@@ -383,8 +383,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: TAP ANYWHERE TO START
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7d4655248b6b6da49b842a4fc91eb9df, type: 2}
-  m_sharedMaterial: {fileID: -8268737881613447693, guid: 7d4655248b6b6da49b842a4fc91eb9df, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aceff4f91a905c54aacf6b4357533443, type: 2}
+  m_sharedMaterial: {fileID: 6493785947063699982, guid: aceff4f91a905c54aacf6b4357533443, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -636,6 +636,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5485197897345336041, guid: ef9a0c81fb231bb41855567fc7a09f07, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aceff4f91a905c54aacf6b4357533443, type: 2}
+    - target: {fileID: 5485197897345336041, guid: ef9a0c81fb231bb41855567fc7a09f07, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6493785947063699982, guid: aceff4f91a905c54aacf6b4357533443, type: 2}
+    - target: {fileID: 5485197897345336041, guid: ef9a0c81fb231bb41855567fc7a09f07, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6371102790991936903, guid: ef9a0c81fb231bb41855567fc7a09f07, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -697,11 +709,11 @@ PrefabInstance:
     - target: {fileID: 952840009489816362, guid: 196fca42769f08341a171797d0ac6087, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 7d4655248b6b6da49b842a4fc91eb9df, type: 2}
+      objectReference: {fileID: 11400000, guid: aceff4f91a905c54aacf6b4357533443, type: 2}
     - target: {fileID: 952840009489816362, guid: 196fca42769f08341a171797d0ac6087, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -8268737881613447693, guid: 7d4655248b6b6da49b842a4fc91eb9df, type: 2}
+      objectReference: {fileID: 6493785947063699982, guid: aceff4f91a905c54aacf6b4357533443, type: 2}
     - target: {fileID: 952840009489816362, guid: 196fca42769f08341a171797d0ac6087, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0

@@ -19,6 +19,8 @@ namespace GameLogic
 
         public GameObject actor;
 
+        public bool passable = false;
+
         public void ChangeChapter(int chapterId)
         {
             switch (chapterId)
@@ -184,6 +186,7 @@ namespace GameLogic
 
         public void OnMapTriggerEnter(string trigger_name, Collider other)
         {
+            if(!passable) return;
             if (other.gameObject.tag != "Player") return;
             MapInfo mapInfo = null;
             for (int i = 0; i < m_mapInfos.Count; i++)
@@ -201,20 +204,21 @@ namespace GameLogic
                     {
                         if(mapInfo.maptype == (int)MapType.MOUNTAIN_LONG  || mapInfo.maptype == (int)MapType.ROCK_CROSS)
                         {
-                            actor.transform.position = new Vector3(8, 0.7f, 0);
+                            actor.transform.position = new Vector3(4, 0.7f, 0);
                         }
-                        else actor.transform.position = new Vector3(6, 0.7f, 0);
-                    }
+                        else actor.transform.position = new Vector3(4, 0.7f, 0);
                         ChangeMap(mapInfo.left_id);
+                    }
+                        
                     break;
                 case "right":
                     if (mapInfo.right_id != -1)
                     {
                         if (mapInfo.maptype == (int)MapType.MOUNTAIN_LONG || mapInfo.maptype == (int)MapType.ROCK_CROSS)
                         {
-                            actor.transform.position = new Vector3(-8, 0.7f, 0);
+                            actor.transform.position = new Vector3(-4, 0.7f, 0);
                         }
-                        else actor.transform.position = new Vector3(-6, 0.7f, 0);
+                        else actor.transform.position = new Vector3(-4, 0.7f, 0);
                         ChangeMap(mapInfo.right_id);
                     }
                         
@@ -226,9 +230,9 @@ namespace GameLogic
                         {
                             if (mapInfo.maptype == (int)MapType.MOUNTAIN_LONG)
                             {
-                                actor.transform.position = new Vector3(-8, 0.7f, 0);
+                                actor.transform.position = new Vector3(-4, 0.7f, 0);
                             }
-                            else actor.transform.position = new Vector3(-6, 0.7f, 0);
+                            else actor.transform.position = new Vector3(-4, 0.7f, 0);
                         }
                         else actor.transform.position = new Vector3(0, 0.7f, -3.5f);
                         ChangeMap(mapInfo.up_id);
@@ -242,9 +246,9 @@ namespace GameLogic
                         {
                             if (mapInfo.maptype == (int)MapType.MOUNTAIN_LONG)
                             {
-                                actor.transform.position = new Vector3(-8, 0.7f, 0);
+                                actor.transform.position = new Vector3(-4, 0.7f, 0);
                             }
-                            else actor.transform.position = new Vector3(-6, 0.7f, 0);
+                            else actor.transform.position = new Vector3(-4, 0.7f, 0);
                         }
                         else actor.transform.position = new Vector3(0, 0.7f, 3.5f);
                         ChangeMap(mapInfo.down_id);

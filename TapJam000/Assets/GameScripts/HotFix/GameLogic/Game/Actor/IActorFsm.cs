@@ -9,7 +9,7 @@ namespace GameLogic
     {
         protected Animator animator;
         protected AnimatorStateInfo animatorInfo;
-
+        protected Collider co;
         protected ActorStateType stateType;
 
         protected List<AnimationInfo> animations = new List<AnimationInfo>();

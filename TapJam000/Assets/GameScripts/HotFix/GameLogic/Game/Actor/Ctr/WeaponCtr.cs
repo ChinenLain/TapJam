@@ -9,7 +9,7 @@ namespace GameLogic
         public WeaponType weaponType;
         private Animator animator;
         public GameObject weapon;
-        public float hurt = 10.0f;
+        private float hurt = 10.0f;
         void Start()
         {
             animator = GetComponent<Animator>();

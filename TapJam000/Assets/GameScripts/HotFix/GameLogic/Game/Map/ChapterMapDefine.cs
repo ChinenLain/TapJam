@@ -6,9 +6,9 @@ namespace GameLogic
 {
     public static class ChapterMapDefine
     {
-        public static readonly MapInfo[] chapter_00 = new MapInfo[9]
+        public static readonly MapInfo[] chapter_00 = new MapInfo[19]
         {
-            new MapInfo(1,(int)MapType.ROCK_CROSS,-1,2,-1,4),
+            new MapInfo(1,(int)MapType.ROCK_CROSS,10,2,18,4),
             new MapInfo(2,(int)MapType.ROCK_CROSS,1,3,-1,5),
             new MapInfo(3,(int)MapType.ROCK_CROSS,2,-1,-1,6),
             new MapInfo(4,(int)MapType.ROCK_CROSS,-1,5,1,7),
@@ -16,7 +16,19 @@ namespace GameLogic
             new MapInfo(6,(int)MapType.ROCK_CROSS,5,-1,3,9),
             new MapInfo(7,(int)MapType.ROCK_CROSS,-1,8,4,-1),
             new MapInfo(8,(int)MapType.ROCK_CROSS,7,9,5,-1),
-            new MapInfo(9,(int)MapType.ROCK_CROSS,8,-1,6,-1)
+            new MapInfo(9,(int)MapType.ROCK_CROSS,8,-1,6,-1),
+
+
+            new MapInfo(10,(int)MapType.FOREST_RECT01  ,-1,11,-1,-1),
+            new MapInfo(11,(int)MapType.FOREST_RECT02  ,10,12,-1,-1),
+            new MapInfo(12,(int)MapType.FOREST_FOG     ,11,13,-1,-1),
+            new MapInfo(13,(int)MapType.MOUNTAIN_RECT01,12,14,-1,-1),
+            new MapInfo(14,(int)MapType.MOUNTAIN_RECT02,13,15,6,-1),
+            new MapInfo(15,(int)MapType.MOUNTAIN_FOG   ,14,16,-1,-1),
+            new MapInfo(16,(int)MapType.MOUNTAIN_LONG  ,15,17,-1,-1),
+            new MapInfo(17,(int)MapType.ROCK_RECT      ,16,18,-1,-1),
+            new MapInfo(18,(int)MapType.ROCK_CROSS     ,17,19,2,5),
+            new MapInfo(19,(int)MapType.GRASS_RECT     ,18,10,-1,-1)
         };
 
         public static readonly MapInfo[] chapter_01 = new MapInfo[5]

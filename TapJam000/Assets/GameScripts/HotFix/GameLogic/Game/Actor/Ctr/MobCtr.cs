@@ -31,7 +31,6 @@ namespace GameLogic
             rb = GetComponent<Rigidbody>();
             animator = GetComponent<Animator>();
 
-            target = GameObject.Find("MainActor");
             weapon = transform.Find("weapon").gameObject;
             
             animations.Add(new AnimationInfo("mob-wait", (int)ActorStateType.Idle));
@@ -59,7 +58,7 @@ namespace GameLogic
             {
                 if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.5f)
                     weapon.SetActive(false);
-                else if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.1f)
+                else if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.3f)
                     weapon.SetActive(true);
                 if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.96f)
                     return;
@@ -99,6 +98,7 @@ namespace GameLogic
             SetNextState("mob-hitby",1);
             if(blood <= 0f)
             {
+                GameSystem.Instance.CurrentMapMobNum--;
                 Destroy(gameObject);
             }
         }

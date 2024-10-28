@@ -33,7 +33,7 @@ namespace GameLogic
             state = StateType.STATIC;
             cameraVelocity = Vector3.zero;
             main_camera = transform.FindChildComponent<Camera>("Main Camera");
-            Follow(GameObject.Find("MainActor").GetComponent<Transform>());
+            Follow(GameObject.Find("MainActor")?.GetComponent<Transform>());
         }
 
         
@@ -44,10 +44,14 @@ namespace GameLogic
 
             if (state == StateType.FOLLOW && target != null)
             {
+                if (target == null)
+                    return;
                 SetPostion(target.position, true);
             }
             else if (state == StateType.MOVE)
             {
+                if (target == null)
+                    return;
                 SetPostion(target_position, true);
             }
         
