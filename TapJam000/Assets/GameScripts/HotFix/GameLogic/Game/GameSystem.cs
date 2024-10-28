@@ -15,8 +15,12 @@ namespace GameLogic
         {
             await UniTask.Yield();
 
-            GameModule.UI.ShowUIAsync<UIGameWindow>();
-            MapManager.Instance.ChangeChapter(1);
+            GameModule.UI.ShowUI<UIGameWindow>();
+
+            MapManager.Instance.ChangeChapter(0);
+            MapManager.Instance.ChangeMap(8);
+
+            GameEvent.Send(GameEventDefine.DialogueTaskStart,0, "ch00", 0,5);
         }
 
         public void DestroyGame()

@@ -23,17 +23,27 @@ namespace GameLogic
         {
             switch (chapterId)
             {
+                case 0:
+                    currentChapterId = chapterId;
+                    m_mapInfos = ChapterMapDefine.GetMapInfo(ChapterMapDefine.chapter_00);
+                    ClearMap();
+                    break;
                 case 1:
                     currentChapterId = chapterId;
                     m_mapInfos = ChapterMapDefine.GetMapInfo(ChapterMapDefine.chapter_01);
                     ClearMap();
-                    ChangeMap(m_mapInfos[0].id);
+                    break;
+                case 2:
+                    currentChapterId = chapterId;
+                    m_mapInfos = ChapterMapDefine.GetMapInfo(ChapterMapDefine.chapter_02);
+                    ClearMap();
                     break;
             }
         }
 
         public void ChangeMap(int mapId) 
-        { 
+        {
+            GameEvent.Send(GameEventDefine.ChangeMap);
             MapInfo mapInfo = null;
             for(int i = 0; i < m_mapInfos.Count; i++)
             {
@@ -44,8 +54,6 @@ namespace GameLogic
                 }
             }
             if (mapInfo == null) return;
-
-            actor.transform.position = new Vector3(0, 0.7f, 0);
 
             CloseMap(currentMapId);
 
@@ -190,19 +198,57 @@ namespace GameLogic
             {
                 case "left":
                     if (mapInfo.left_id != -1)
+                    {
+                        if(mapInfo.maptype == (int)MapType.MOUNTAIN_LONG  || mapInfo.maptype == (int)MapType.ROCK_CROSS)
+                        {
+                            actor.transform.position = new Vector3(8, 0.7f, 0);
+                        }
+                        else actor.transform.position = new Vector3(6, 0.7f, 0);
+                    }
                         ChangeMap(mapInfo.left_id);
                     break;
                 case "right":
                     if (mapInfo.right_id != -1)
+                    {
+                        if (mapInfo.maptype == (int)MapType.MOUNTAIN_LONG || mapInfo.maptype == (int)MapType.ROCK_CROSS)
+                        {
+                            actor.transform.position = new Vector3(-8, 0.7f, 0);
+                        }
+                        else actor.transform.position = new Vector3(-6, 0.7f, 0);
                         ChangeMap(mapInfo.right_id);
+                    }
+                        
                     break;
                 case "up":
                     if (mapInfo.up_id != -1)
+                    {
+                        if (mapInfo.maptype != (int)MapType.ROCK_CROSS)
+                        {
+                            if (mapInfo.maptype == (int)MapType.MOUNTAIN_LONG)
+                            {
+                                actor.transform.position = new Vector3(-8, 0.7f, 0);
+                            }
+                            else actor.transform.position = new Vector3(-6, 0.7f, 0);
+                        }
+                        else actor.transform.position = new Vector3(0, 0.7f, -3.5f);
                         ChangeMap(mapInfo.up_id);
+                    }
+                        
                     break;
                 case "down":
                     if (mapInfo.down_id != -1)
+                    {
+                        if (mapInfo.maptype != (int)MapType.ROCK_CROSS)
+                        {
+                            if (mapInfo.maptype == (int)MapType.MOUNTAIN_LONG)
+                            {
+                                actor.transform.position = new Vector3(-8, 0.7f, 0);
+                            }
+                            else actor.transform.position = new Vector3(-6, 0.7f, 0);
+                        }
+                        else actor.transform.position = new Vector3(0, 0.7f, 3.5f);
                         ChangeMap(mapInfo.down_id);
+                    }    
                     break;
             }
         }

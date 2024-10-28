@@ -10,17 +10,24 @@ namespace GameLogic
 {
     public class ActorCtr : IActorFsm
     {
+        public float blood = 100.0f;
+        private float MAX_Blood = 100.0f;
         private Rigidbody rb;
-
+        private WeaponRoot weapon;
         private float move_speed = 3.5f;
         private bool moving;
 
         private Vector2 move_pos;
 
+        private int move_dir = 0;
+        private int hit_dir = 0;
+
         private bool hitting;
         private int hit_pos;
         private bool trigger;
         private float trigger_time;
+
+        private bool isDead = false;
         void Start()
         {
             moving = false;
@@ -29,6 +36,8 @@ namespace GameLogic
 
             rb = GetComponent<Rigidbody>();
             animator = GetComponent<Animator>();
+
+            weapon = transform.Find("WeaponRoot").gameObject.GetComponent<WeaponRoot>();
 
             DefaultStateName = "ch-stand";
             animations.Add(new AnimationInfo("ch-stand",(int)ActorStateType.Idle));
@@ -40,8 +49,10 @@ namespace GameLogic
             animations.Add(new AnimationInfo("ch-hitright", (int)ActorStateType.Attack, false,false));
             animations.Add(new AnimationInfo("ch-hitup", (int)ActorStateType.Attack, false, false));
             animations.Add(new AnimationInfo("ch-hitdown", (int)ActorStateType.Attack, false, false));
+            animations.Add(new AnimationInfo("ch-dead", (int)ActorStateType.None, false));
+            animations.Add(new AnimationInfo("ch-low", (int)ActorStateType.None, false));
 
-
+            GameEvent.AddEventListener<float>(ActorEventDefine.HurtBy, HitBy);
             GameEvent.AddEventListener<Vector2>(UIEventDefine.StickDrag,OnStickDrag);
             GameEvent.AddEventListener<Vector2>(UIEventDefine.StickEndDrag, OnStickEndDrag);
             GameEvent.AddEventListener<int,float>(UIEventDefine.AttackClick, OnAttackClick);
@@ -56,18 +67,22 @@ namespace GameLogic
                 case (int)DirectionType.Left:
                     if (GetCurrentState() == "ch-moveleft") return;
                     SetNextState("ch-moveleft");
+                    move_dir = (int)DirectionType.Left;
                     break;
                 case (int)DirectionType.Right:
                     if (GetCurrentState() == "ch-moveright") return;
                     SetNextState("ch-moveright");
+                    move_dir = (int)DirectionType.Right;
                     break;
                 case (int)DirectionType.Up:
                     if (GetCurrentState() == "ch-moveup") return;
                     SetNextState("ch-moveup");
+                    move_dir = (int)DirectionType.Up;
                     break;
                 case (int)DirectionType.Down:
                     if (GetCurrentState() == "ch-movedown") return;
                     SetNextState("ch-movedown");
+                    move_dir = (int)DirectionType.Down;
                     break;
             }
         }
@@ -78,16 +93,39 @@ namespace GameLogic
             {
                 case (int)DirectionType.Left:
                     SetNextState("ch-hitleft",1);
+                    hit_dir = (int)DirectionType.Left;
                     break;
                 case (int)DirectionType.Right:
                     SetNextState("ch-hitright",1);
+                    hit_dir = (int)DirectionType.Right;
                     break;
                 case (int)DirectionType.Up:
                     SetNextState("ch-hitup", 1);
+                    hit_dir = (int)DirectionType.Up;
                     break;
                 case (int)DirectionType.Down:
                     SetNextState("ch-hitdown",1);
+                    hit_dir = (int)DirectionType.Down;
                     break;
+            }
+        }
+
+        public void HitBy(float hurt)
+        {
+            blood -= hurt;
+            GameEvent.Send(UIEventDefine.ActorBloodChanged, blood,MAX_Blood);
+            if(blood <= 0)
+            {
+                if (!isDead)
+                {
+                    GameEvent.Send(ActorEventDefine.Dead);
+                }
+                else
+                {
+                    isDead = true;
+                }
+                
+                ChangeState("ch-dead", true);
             }
         }
 
@@ -125,6 +163,7 @@ namespace GameLogic
 
         private void Update()
         {
+            if (isDead) return;
             if (hitting)
             {
                 
@@ -144,6 +183,7 @@ namespace GameLogic
                 if (GetAnimationInfo(GetCurrentState()).stateType == (int)ActorStateType.Move)
                 {
                     rb.velocity = new Vector3(move_pos.x, 0, move_pos.y) * move_speed;
+                    GameEvent.Send(ActorEventDefine.Move,gameObject.transform.position);
                 }
                 else
                 {
@@ -158,16 +198,36 @@ namespace GameLogic
 
         protected override void OnStateChanged(string oldState, string newState)
         {
-            if(GetAnimationInfo(newState).stateType == (int)ActorStateType.Attack)
+            if (isDead) return;
+            int st = GetAnimationInfo(newState).stateType;
+            if (st == (int)ActorStateType.Attack)
             {
                 trigger = true;
                 trigger_time = 0f;
+                weapon.SetState("hit", hit_dir);
+            }
+            else if(st == (int)ActorStateType.Idle)
+            {
+                weapon.SetState("stand", (int)DirectionType.Mid);
+            }
+            else if (st == (int)ActorStateType.Move)
+            {
+                weapon.SetState("move", move_dir);
             }
         }
 
         protected override void OnStateEnd(string state)
         {
             
+        }
+
+        private void OnDestroy()
+        {
+            GameEvent.RemoveEventListener<float>(ActorEventDefine.HurtBy, HitBy);
+            GameEvent.RemoveEventListener<Vector2>(UIEventDefine.StickDrag, OnStickDrag);
+            GameEvent.RemoveEventListener<Vector2>(UIEventDefine.StickEndDrag, OnStickEndDrag);
+            GameEvent.RemoveEventListener<int, float>(UIEventDefine.AttackClick, OnAttackClick);
+            GameEvent.RemoveEventListener<int, float>(UIEventDefine.AttackEndClick, OnAttackEndClick);
         }
     }
 }

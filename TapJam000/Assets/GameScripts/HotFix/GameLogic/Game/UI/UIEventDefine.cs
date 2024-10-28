@@ -14,5 +14,15 @@ namespace GameLogic
         public static readonly int AttackEndClick = RuntimeId.ToRuntimeId("UIEventDefine.AttackEndClick");
 
         public static readonly int AvatarClick = RuntimeId.ToRuntimeId("UIEventDefine.AvatarClick");
+
+        public static readonly int DialogueClick = RuntimeId.ToRuntimeId("UIEventDefine.DialogueClick");
+        public static readonly int PlayTalkFinish = RuntimeId.ToRuntimeId("UIEventDefine.PlayTalkFinish");
+
+        public static readonly int LoadingPanelOpen = RuntimeId.ToRuntimeId("UIEventDefine.LoadingPanelOpen");
+        public static readonly int LoadingPanelClose = RuntimeId.ToRuntimeId("UIEventDefine.LoadingPanelClose");
+
+        public static readonly int ActorBloodChanged = RuntimeId.ToRuntimeId("UIEventDefine.ActorBloodChanged");
     }
+
+
 }

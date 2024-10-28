@@ -166,6 +166,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9186837028778413218}
     m_Modifications:
+    - target: {fileID: 1483516238888865306, guid: f5204a1ce07317648b0e9b9b0a9b42e7, type: 3}
+      propertyPath: m_Name
+      value: AnimTop
+      objectReference: {fileID: 0}
     - target: {fileID: 3738206484094713429, guid: f5204a1ce07317648b0e9b9b0a9b42e7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -249,6 +253,14 @@ PrefabInstance:
     - target: {fileID: 4125368373723629976, guid: f5204a1ce07317648b0e9b9b0a9b42e7, type: 3}
       propertyPath: m_Name
       value: m_rectMagic
+      objectReference: {fileID: 0}
+    - target: {fileID: 5940608411315275450, guid: f5204a1ce07317648b0e9b9b0a9b42e7, type: 3}
+      propertyPath: m_Name
+      value: m_rectMagicFluid
+      objectReference: {fileID: 0}
+    - target: {fileID: 7576512077530016323, guid: f5204a1ce07317648b0e9b9b0a9b42e7, type: 3}
+      propertyPath: m_Name
+      value: AnimBottom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -361,8 +373,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4586755261341699235, guid: 00228e467f0ee8542a34fbec9c29d1cd, type: 3}
+      propertyPath: m_Name
+      value: AnimTop
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586755261341699235, guid: 00228e467f0ee8542a34fbec9c29d1cd, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4761644168784226554, guid: 00228e467f0ee8542a34fbec9c29d1cd, type: 3}
+      propertyPath: m_Name
+      value: AnimBottom
       objectReference: {fileID: 0}
     - target: {fileID: 4761644168784226554, guid: 00228e467f0ee8542a34fbec9c29d1cd, type: 3}
       propertyPath: m_IsActive
@@ -383,6 +403,18 @@ PrefabInstance:
     - target: {fileID: 5182732524180313688, guid: 00228e467f0ee8542a34fbec9c29d1cd, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344616309943203736, guid: 00228e467f0ee8542a34fbec9c29d1cd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344616309943203736, guid: 00228e467f0ee8542a34fbec9c29d1cd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737168351949128707, guid: 00228e467f0ee8542a34fbec9c29d1cd, type: 3}
+      propertyPath: m_Name
+      value: m_rectBloodFluid
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

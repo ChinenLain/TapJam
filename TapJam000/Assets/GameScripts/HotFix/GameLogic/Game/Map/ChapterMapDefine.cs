@@ -6,7 +6,29 @@ namespace GameLogic
 {
     public static class ChapterMapDefine
     {
-        public static readonly MapInfo[] chapter_01 = new MapInfo[10]
+        public static readonly MapInfo[] chapter_00 = new MapInfo[9]
+        {
+            new MapInfo(1,(int)MapType.ROCK_CROSS,-1,2,-1,4),
+            new MapInfo(2,(int)MapType.ROCK_CROSS,1,3,-1,5),
+            new MapInfo(3,(int)MapType.ROCK_CROSS,2,-1,-1,6),
+            new MapInfo(4,(int)MapType.ROCK_CROSS,-1,5,1,7),
+            new MapInfo(5,(int)MapType.ROCK_CROSS,4,6,2,8),
+            new MapInfo(6,(int)MapType.ROCK_CROSS,5,-1,3,9),
+            new MapInfo(7,(int)MapType.ROCK_CROSS,-1,8,4,-1),
+            new MapInfo(8,(int)MapType.ROCK_CROSS,7,9,5,-1),
+            new MapInfo(9,(int)MapType.ROCK_CROSS,8,-1,6,-1)
+        };
+
+        public static readonly MapInfo[] chapter_01 = new MapInfo[5]
+        {
+            new MapInfo(1,(int)MapType.FOREST_RECT01  ,-1,2,-1,-1),
+            new MapInfo(2,(int)MapType.GRASS_RECT     ,1,3,-1,-1),
+            new MapInfo(3,(int)MapType.FOREST_RECT01  ,2,4,-1,-1),
+            new MapInfo(4,(int)MapType.MOUNTAIN_RECT01,3,5,-1,-1),
+            new MapInfo(5,(int)MapType.MOUNTAIN_RECT02,4,-1,-1,-1),
+        };
+
+        public static readonly MapInfo[] chapter_02 = new MapInfo[10]
         {
             new MapInfo(0,(int)MapType.FOREST_RECT01  ,-1,1,-1,-1),
             new MapInfo(1,(int)MapType.FOREST_RECT02  ,0,2,-1,-1),
