@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UIRaw_UIAnim_anim-fluid_fluid-bottom
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 0
+      maxTextureSize: 0
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 49
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: WebGL
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 21300000, guid: 1d396b80b16143b458bb3df0131f1739, type: 3}
+    - {fileID: 21300000, guid: a34f74f98f3f4da43ba6bfed6397ebff, type: 3}
+    - {fileID: 21300000, guid: e499878ed8ee6e74d88afbbb6f5f500f, type: 3}
+    - {fileID: 21300000, guid: 3ec920cc88c276c46b39f6199fa2fac6, type: 3}
+    - {fileID: 21300000, guid: 430ff72a5283fb849bc127b997c2e9e7, type: 3}
+    - {fileID: 21300000, guid: c7e5bdf2aded68c4797b11c5dd0d94c2, type: 3}
+    - {fileID: 21300000, guid: 4a8c892370a8a2645a75b96f28b84aa7, type: 3}
+    - {fileID: 21300000, guid: 1fa1c4140850beb4aaa4c877c77f9456, type: 3}
+    - {fileID: 21300000, guid: b3b674cc8bba4fc4c90c17d656b2a226, type: 3}
+    - {fileID: 21300000, guid: 321bc638fccda3942ad1736d8540c41d, type: 3}
+    - {fileID: 21300000, guid: c1f6f427785467945b929368eea9e95b, type: 3}
+    - {fileID: 21300000, guid: 348e1fe575fe01c4eaefa09a4bf83978, type: 3}
+    - {fileID: 21300000, guid: 105d572ce662cd6488a108e64ef2de4d, type: 3}
+    - {fileID: 21300000, guid: 5bb886d40baa09b43bf6b505ef4384fb, type: 3}
+    - {fileID: 21300000, guid: 63c9cece4a14ec849bddb8734699c20a, type: 3}
+    - {fileID: 21300000, guid: ed80fb8f8a8e49440ba691886f612663, type: 3}
+    - {fileID: 21300000, guid: 06082bc53d731bb4eba1ab665c1587c4, type: 3}
+    - {fileID: 21300000, guid: acb66c5caaa94b041b710de44843b98b, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 1d396b80b16143b458bb3df0131f1739: 21300000
+    - c7e5bdf2aded68c4797b11c5dd0d94c2: 21300000
+    - 4a8c892370a8a2645a75b96f28b84aa7: 21300000
+    - 1fa1c4140850beb4aaa4c877c77f9456: 21300000
+    - 5bb886d40baa09b43bf6b505ef4384fb: 21300000
+    - 06082bc53d731bb4eba1ab665c1587c4: 21300000
+    - 348e1fe575fe01c4eaefa09a4bf83978: 21300000
+    - c1f6f427785467945b929368eea9e95b: 21300000
+    - 321bc638fccda3942ad1736d8540c41d: 21300000
+    - a34f74f98f3f4da43ba6bfed6397ebff: 21300000
+    - 430ff72a5283fb849bc127b997c2e9e7: 21300000
+    - 105d572ce662cd6488a108e64ef2de4d: 21300000
+    - acb66c5caaa94b041b710de44843b98b: 21300000
+    - 3ec920cc88c276c46b39f6199fa2fac6: 21300000
+    - b3b674cc8bba4fc4c90c17d656b2a226: 21300000
+    - e499878ed8ee6e74d88afbbb6f5f500f: 21300000
+    - 63c9cece4a14ec849bddb8734699c20a: 21300000
+    - ed80fb8f8a8e49440ba691886f612663: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 1d396b80b16143b458bb3df0131f1739, type: 3}
+  - {fileID: 21300000, guid: c7e5bdf2aded68c4797b11c5dd0d94c2, type: 3}
+  - {fileID: 21300000, guid: 4a8c892370a8a2645a75b96f28b84aa7, type: 3}
+  - {fileID: 21300000, guid: 1fa1c4140850beb4aaa4c877c77f9456, type: 3}
+  - {fileID: 21300000, guid: 5bb886d40baa09b43bf6b505ef4384fb, type: 3}
+  - {fileID: 21300000, guid: 06082bc53d731bb4eba1ab665c1587c4, type: 3}
+  - {fileID: 21300000, guid: 348e1fe575fe01c4eaefa09a4bf83978, type: 3}
+  - {fileID: 21300000, guid: c1f6f427785467945b929368eea9e95b, type: 3}
+  - {fileID: 21300000, guid: 321bc638fccda3942ad1736d8540c41d, type: 3}
+  - {fileID: 21300000, guid: a34f74f98f3f4da43ba6bfed6397ebff, type: 3}
+  - {fileID: 21300000, guid: 430ff72a5283fb849bc127b997c2e9e7, type: 3}
+  - {fileID: 21300000, guid: 105d572ce662cd6488a108e64ef2de4d, type: 3}
+  - {fileID: 21300000, guid: acb66c5caaa94b041b710de44843b98b, type: 3}
+  - {fileID: 21300000, guid: 3ec920cc88c276c46b39f6199fa2fac6, type: 3}
+  - {fileID: 21300000, guid: b3b674cc8bba4fc4c90c17d656b2a226, type: 3}
+  - {fileID: 21300000, guid: e499878ed8ee6e74d88afbbb6f5f500f, type: 3}
+  - {fileID: 21300000, guid: 63c9cece4a14ec849bddb8734699c20a, type: 3}
+  - {fileID: 21300000, guid: ed80fb8f8a8e49440ba691886f612663, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - fluid-bottom-01
+  - fluid-bottom-06
+  - fluid-bottom-07
+  - fluid-bottom-08
+  - fluid-bottom-14
+  - fluid-bottom-17
+  - fluid-bottom-12
+  - fluid-bottom-11
+  - fluid-bottom-10
+  - fluid-bottom-02
+  - fluid-bottom-05
+  - fluid-bottom-13
+  - fluid-bottom-18
+  - fluid-bottom-04
+  - fluid-bottom-09
+  - fluid-bottom-03
+  - fluid-bottom-15
+  - fluid-bottom-16
+  m_RenderDataMap: {}
+  m_Tag: UIRaw_UIAnim_anim-fluid_fluid-bottom
+  m_IsVariant: 0

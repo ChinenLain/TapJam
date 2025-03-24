@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UIRaw_UIAnim_anim-fluid_fluid-top
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 0
+      maxTextureSize: 0
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 49
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: WebGL
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 21300000, guid: 2f9c78f52b6406f4ea6a35242af6d70d, type: 3}
+    - {fileID: 21300000, guid: c5d4841cb460aba4fbbed716ed781311, type: 3}
+    - {fileID: 21300000, guid: d5eff0dceb9a4924dbef4cd3b4caac13, type: 3}
+    - {fileID: 21300000, guid: f9ca40e19f4023b45bf843ed2c2cbda9, type: 3}
+    - {fileID: 21300000, guid: 6361d681a66abdb4e8cc6f99a1157a89, type: 3}
+    - {fileID: 21300000, guid: d8fc18efed3aaac46a2239c9ef8a5cb0, type: 3}
+    - {fileID: 21300000, guid: 3de38527cf1ea9c45882134f2396c38f, type: 3}
+    - {fileID: 21300000, guid: 3e037e8a6481ecf4e94ff9af34d40b26, type: 3}
+    - {fileID: 21300000, guid: 54bbedf5b22be6644867751d3be32088, type: 3}
+    - {fileID: 21300000, guid: fc3a5253d134ca145970935a7ddd196c, type: 3}
+    - {fileID: 21300000, guid: 8296d9b815de5eb4089b484a7c1bbc86, type: 3}
+    - {fileID: 21300000, guid: 0b72eca470bb2b74dbcd0ee62999fe99, type: 3}
+    - {fileID: 21300000, guid: 41e05ecaef093614281d3635904441d0, type: 3}
+    - {fileID: 21300000, guid: d72920e209dc2ad4489b66c35207b3d4, type: 3}
+    - {fileID: 21300000, guid: 503e6bb138f00c449b399ae07779e561, type: 3}
+    - {fileID: 21300000, guid: eadad9ed7a416ee4ea48853e7aa086f8, type: 3}
+    - {fileID: 21300000, guid: b25f24e0ac99836459ea37623cbc771a, type: 3}
+    - {fileID: 21300000, guid: dd3dc7bbda699c94e9f09971cb0d0aa6, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - b25f24e0ac99836459ea37623cbc771a: 21300000
+    - 6361d681a66abdb4e8cc6f99a1157a89: 21300000
+    - 503e6bb138f00c449b399ae07779e561: 21300000
+    - f9ca40e19f4023b45bf843ed2c2cbda9: 21300000
+    - d72920e209dc2ad4489b66c35207b3d4: 21300000
+    - fc3a5253d134ca145970935a7ddd196c: 21300000
+    - 0b72eca470bb2b74dbcd0ee62999fe99: 21300000
+    - 2f9c78f52b6406f4ea6a35242af6d70d: 21300000
+    - 54bbedf5b22be6644867751d3be32088: 21300000
+    - 3de38527cf1ea9c45882134f2396c38f: 21300000
+    - 8296d9b815de5eb4089b484a7c1bbc86: 21300000
+    - 3e037e8a6481ecf4e94ff9af34d40b26: 21300000
+    - 41e05ecaef093614281d3635904441d0: 21300000
+    - dd3dc7bbda699c94e9f09971cb0d0aa6: 21300000
+    - c5d4841cb460aba4fbbed716ed781311: 21300000
+    - d5eff0dceb9a4924dbef4cd3b4caac13: 21300000
+    - eadad9ed7a416ee4ea48853e7aa086f8: 21300000
+    - d8fc18efed3aaac46a2239c9ef8a5cb0: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b25f24e0ac99836459ea37623cbc771a, type: 3}
+  - {fileID: 21300000, guid: 6361d681a66abdb4e8cc6f99a1157a89, type: 3}
+  - {fileID: 21300000, guid: 503e6bb138f00c449b399ae07779e561, type: 3}
+  - {fileID: 21300000, guid: f9ca40e19f4023b45bf843ed2c2cbda9, type: 3}
+  - {fileID: 21300000, guid: d72920e209dc2ad4489b66c35207b3d4, type: 3}
+  - {fileID: 21300000, guid: fc3a5253d134ca145970935a7ddd196c, type: 3}
+  - {fileID: 21300000, guid: 0b72eca470bb2b74dbcd0ee62999fe99, type: 3}
+  - {fileID: 21300000, guid: 2f9c78f52b6406f4ea6a35242af6d70d, type: 3}
+  - {fileID: 21300000, guid: 54bbedf5b22be6644867751d3be32088, type: 3}
+  - {fileID: 21300000, guid: 3de38527cf1ea9c45882134f2396c38f, type: 3}
+  - {fileID: 21300000, guid: 8296d9b815de5eb4089b484a7c1bbc86, type: 3}
+  - {fileID: 21300000, guid: 3e037e8a6481ecf4e94ff9af34d40b26, type: 3}
+  - {fileID: 21300000, guid: 41e05ecaef093614281d3635904441d0, type: 3}
+  - {fileID: 21300000, guid: dd3dc7bbda699c94e9f09971cb0d0aa6, type: 3}
+  - {fileID: 21300000, guid: c5d4841cb460aba4fbbed716ed781311, type: 3}
+  - {fileID: 21300000, guid: d5eff0dceb9a4924dbef4cd3b4caac13, type: 3}
+  - {fileID: 21300000, guid: eadad9ed7a416ee4ea48853e7aa086f8, type: 3}
+  - {fileID: 21300000, guid: d8fc18efed3aaac46a2239c9ef8a5cb0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - fluid-top-17
+  - fluid-top-05
+  - fluid-top-15
+  - fluid-top-04
+  - fluid-top-14
+  - fluid-top-10
+  - fluid-top-12
+  - fluid-top-01
+  - fluid-top-09
+  - fluid-top-07
+  - fluid-top-11
+  - fluid-top-08
+  - fluid-top-13
+  - fluid-top-18
+  - fluid-top-02
+  - fluid-top-03
+  - fluid-top-16
+  - fluid-top-06
+  m_RenderDataMap: {}
+  m_Tag: UIRaw_UIAnim_anim-fluid_fluid-top
+  m_IsVariant: 0
